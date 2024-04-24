@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Lars Anderson | Contact</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+	<nav id="main_nav">
+		<ul>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="projects.html">Skills & Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id="mobile_header">
+		<div id="ham_menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<a href="index.html"><h1>Lars Anderson</h1></a>
+	</div>
+
+</header>
+
+<main id="contact_page">
+
+    <form id="contact_form" action="index.html">
+		<h2>Contact Me</h2>
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" type="text">
+				    <p class="error" id="name_error">* Required field</p>
+                </li>
+                <li>
+                    <label for="phone_number">Phone Number</label>
+                    <input id="phone_number" name="phone_number" type="tel">
+				    <p class="error" id="phone_number_error">* Must input either email or phone number</p>
+					<p class="error" id="phone_number_format_error">* Invalid phone number</p>
+				</li>
+                <li>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="text">
+				    <p class="error" id="email_error">* Must input either email or phone number</p>
+					<p class="error" id="email_format_error">* Invalid email</p>
+                </li>
+                <li>
+                    <label for="message">Message</label>
+					<textarea id="message" name="message" rows="8"></textarea>
+				    <p class="error" id="message_error">* Required field</p>
+                </li>
+                <li id="contact_form_buttons">
+					<button type="reset" id="clear" class="button">Reset</button>
+                    <button type="submit" id="submit" class="button">Send</button>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+
+    <div id="socials">
+		<div>
+			<a href="https://linkedin.com/in/lars-anderson-9931a1237"><img src="images/linkedin.png" alt="Circular image of LinkedIn logo with green background."></a>
+			<a href="https://github.com/larsanderson00"><img src="images/github.png" alt="Circular image of GitHub logo with green background."></a>
+		</div>
+		<p>email: <a href="mail:larsanderson20@gmail.com">larsanderson20@gmail.com</a></p>
+	</div>
+
+</main>
+
+<footer>
+
+    <nav id="footer_nav">
+		<ul>
+			<li><a href="index.html">Main</a></li>
+			<li><a href="projects.html">Skills & Projects</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<p>WEBSITE BY LARS ANDERSON</p>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

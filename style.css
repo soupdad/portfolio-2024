@@ -1,0 +1,475 @@
+
+/* CSS RESET */
+
+html, body, blockquote, code, h1, h2, h3, h4, h5, h6, p, pre {
+    margin:0;
+    padding:0
+}
+button, fieldset, form, input, legend, textarea, select {
+    margin:0;
+    padding:0
+}
+fieldset {
+    border:0
+}
+a, a * {
+    cursor:pointer
+}
+div {
+    margin:0;
+    padding:0;
+    background-color:transparent;
+    text-align:left
+}
+hr, img {
+    border:0
+}
+applet, iframe, object {
+    border:0;
+    margin:0;
+    padding:0
+}
+button, input[type=button], input[type=image], input[type=reset], input[type=submit], label {
+    cursor:pointer;
+}
+ul, li {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+strong {
+    font-weight:bold;
+}
+em {
+    font-style:italic;
+}
+
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+    background-color: #131516;
+    color: #fff;
+}
+
+body {
+    width: min(100%, 800px);
+    margin: auto;
+    background-color: #2d2d2d;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+/* main colors & fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "DM Serif Display", serif;
+}
+
+p, a, #contact_form input, #contact_form textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/* section heading backgrounds*/
+#about h2, #skills h2, #projects h2, #contact_form h2 {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #5c7a6b;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* section backgrounds */
+#tag_line, #about, #skills, #projects, #contact_form, #socials {
+    border-radius: 10px;
+    background-color: #434343;
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* section content */
+#about p, #skills ul, #contact_form fieldset {
+    margin-top: 15px;
+    width: 100%;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+/* HEADER */
+#main_nav {
+    margin: 0;
+    padding-top: 10vh;
+    z-index: 998;
+
+    height: 100vh;
+    width: 100%;
+    max-width: 325px;
+
+    position: fixed;
+    top: 0;
+    left: -325px;
+
+    display: flex;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+
+    transition: .3s ease;
+
+    background-color: #5c7a6b;
+}
+
+#main_nav.active {
+    left: 0;
+}
+
+#main_nav li {
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+#main_nav a:hover {
+    color: #83ad98;
+    text-decoration: underline wavy;
+}
+
+#mobile_header {
+    display: flex;
+    padding: 25px;
+    align-items: center;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    
+    color: #fff;
+    font-family: 'DM Serif Display', Georgia, serif;
+    text-decoration: none;
+    font-size: 2.2rem;
+}
+
+#ham_menu {
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+    z-index: 999;
+}
+
+#ham_menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    transition: .3s ease;
+}
+
+#ham_menu span:nth-child(1) {
+    top: 15%;
+}
+
+#ham_menu span:nth-child(3) {
+    top: 65%;
+}
+
+#ham_menu.active span:nth-child(1) {
+    top: 40%;
+    transform: translate(50%, 50%) rotate(45deg);
+}
+
+#ham_menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+#ham_menu.active span:nth-child(3) {
+    top: 40%;
+    transform: translate(50%, 50%) rotate(-45deg);
+}
+
+#tag_line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15em;
+
+    text-align: center;
+}
+
+#blob {
+    z-index: 0;
+    width: 100%;
+    border-radius: 82% 18% 28% 72% / 60% 65% 35% 40%;
+    transition: .75s ease;
+}
+
+#blob:hover {
+    transition: .75s ease-in-out;
+}
+
+#tag_line p {
+    position: absolute;
+    z-index: 1;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding: 5px;
+    max-width: 20em;
+}
+
+/* MAIN */
+
+
+/* SKILLS & PROJECTS*/
+#skills ul {
+    margin-left: 20px;
+}
+
+#skills li {
+    list-style: disc ;
+}
+
+#projects a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+#projects p {
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    font-size: 1.2rem;
+}
+
+#projects p:hover {
+    color: #83ad98;
+}
+
+#projects img {
+    width: 100%;
+    border-radius: 10px;
+}   
+
+/* CONTACT */
+#contact_form li {
+    padding-bottom: 15px;
+}
+
+#contact_form label {
+    display: block;
+}
+
+#contact_form input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    outline: none;
+}
+
+#contact_form input:focus,
+#contact_form textarea:focus {
+    border: 3px solid #5dba5d;
+}
+
+#contact_form textarea {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+}
+
+.error {
+    display: none;
+    color: #ff311b;
+}
+
+#contact_form_buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    padding: 10px 0;
+
+    width: 120px;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #ba675d;
+}
+
+.button:active {
+    background-color: #5c7a6b;
+}
+
+.button:hover {
+    background-color: #85281e;
+}
+
+#socials {
+    text-align: center;
+}
+
+#socials div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+
+#socials img {
+    width: 4em;
+}
+
+#socials p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#socials p a:hover {
+    color: #8ab59f;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #181818;
+}
+
+#footer_nav {
+    padding: 30px;
+}
+
+#footer_nav li{
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+#footer_nav a:hover {
+    color: #83ad98;
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    padding: 4px;
+}
+
+
+
+/* LARGE SCREEN ADJUSTMENTS */
+@media(min-width: 800px) {
+    /* GENERAL */
+    #scroll_to_top {
+        display: none;
+    }
+
+    body {
+        width: min(90%, 1000px);
+    }
+
+    #tag_line, #about, #skills, #projects {
+        width: max(20em, 40%);
+    }
+
+    /* HEADER */
+    #ham_menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+
+    #main_nav {
+        position: static;
+        height: auto;
+        padding: 0;
+        order: 2;
+        max-width: max-content;
+        text-transform: capitalize;
+        justify-content: flex-end;
+
+        /* width: 100%;
+        max-width: 325px; */
+        
+        /* font-size: 1.75rem; */
+        /* text-transform: uppercase; */
+        /* transition: .3s ease; */
+        background: none; 
+    }
+
+    #main_nav ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #main_nav li {
+        padding: 0;
+        padding-left: 30px;
+    }
+
+    #mobile_header {
+        order: 1;
+        padding: 0;
+    }
+
+    /* MAIN */
+    #tag_line p {
+        width: 300px;
+    }
+
+    /* SKILLS & PROJECTS */
+    #skills li {
+        padding: 15px 0;
+    }
+
+    /* CONTACT */
+    #contact_page {
+        display: block;
+    }
+
+    #contact_form, #socials {
+        width: auto;
+    }
+
+    #contact_form fieldset {
+        width: min(20em, 80%);
+        margin: auto;
+    }
+
+    #contact_form h2 {
+        width: min(14em, 70%);
+        margin: auto;
+    }
+
+    #socials div {
+        justify-content: center;
+    }
+
+    #socials div a {
+        padding: 0 15px;
+    }
+
+    /* FOOTER */
+}
+
+
+
+
