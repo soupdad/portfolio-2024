@@ -69,7 +69,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "DM Serif Display", serif;
 }
 
-p, a, #contact_form input, #contact_form textarea {
+p,
+a,
+#socials li,
+#contact_form label, 
+#contact_form input, 
+#contact_form textarea {
     font-family: "Roboto", sans-serif;
 }
 
@@ -409,12 +414,6 @@ footer p {
         text-transform: capitalize;
         justify-content: flex-end;
 
-        /* width: 100%;
-        max-width: 325px; */
-        
-        /* font-size: 1.75rem; */
-        /* text-transform: uppercase; */
-        /* transition: .3s ease; */
         background: none; 
     }
 
