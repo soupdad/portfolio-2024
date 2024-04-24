@@ -138,7 +138,7 @@ nav a{
 }
 
 #main_nav a:hover {
-    color: #83ad98;
+    color: #181818;
     text-decoration: underline wavy;
 }
 
@@ -427,6 +427,10 @@ footer p {
     #main_nav li {
         padding: 0;
         padding-left: 30px;
+    }
+
+    #main_nav a:hover {
+        color: #83ad98;
     }
 
     #mobile_header {
