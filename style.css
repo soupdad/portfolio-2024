@@ -144,7 +144,6 @@ nav a{
 
 #main_nav a:hover {
     color: #181818;
-    text-decoration: underline wavy;
 }
 
 #mobile_header {
@@ -424,9 +423,29 @@ footer p {
     }
 
     #main_nav li {
+        position: relative;
         padding: 0;
-        padding-left: 30px;
+        margin: 15px;
     }
+
+    #main_nav li:after {
+        display: flex;
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 100%;
+        background-color: #83ad98;
+        left: 0;
+        bottom: -5px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        transform: scaleX(0);
+        transition: transform .2s ease-in-out;
+    }
+
+    #main_nav li:hover:after{
+        transform: scaleX(1);
+    } 
 
     #main_nav a:hover {
         color: #83ad98;
