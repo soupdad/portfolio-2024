@@ -31,7 +31,7 @@ function load() {
 		tagLineDiv.addEventListener('click', moveBlob);
 	}
 
-	hideErrors();
+	// hideErrors();
 }
 
 document.addEventListener("DOMContentLoaded", load);

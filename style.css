@@ -238,7 +238,19 @@ h1 {
 }
 
 /* MAIN */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 15em;
 
+}
+
+#about p span {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
 
 /* SKILLS & PROJECTS*/
 #skills ul {
